@@ -1,0 +1,52 @@
+<%- include('./partials/aside.ejs') %>
+
+<div class="content_blog">
+    <header class="heading-hero">
+        <div class="container-header">
+            <h1 class="heading">
+                Veja nossos artigos
+                <span class="heading-hero-lmh">Aprenda mais com algumas de nossas dicas e informações.</span>
+            </h1>
+        </div>
+    </header>
+    <div class="filter">
+        <h3>Filtrar categorias de conteúdos</h3>
+        <form action="/filter" class="search__form" role="search" method="post">
+            <select name="category" id="category">
+                <optgroup class="opt_category">
+                    <% category.forEach(category => { %>
+                        <option value="<%= category._id %>"><%= category.name %></option>
+                    <% }) %>
+                </optgroup>
+            </select>
+            <button class="btn" type="submit">Filtrar</button>
+        </form>
+    </div>
+    <article class="article_post">
+        <ul>
+            <% data.forEach(data => { %>
+                <li class="list-blog">
+                    <a class="link__blog" href="/post/<%= data.postTitle.replace(/ /g, '-')%>">
+                        <div class="painel_post">
+                            <div class="img_post">
+                                <img src="<%= data.image %>" alt="logo">
+                            </div>
+                            <div class="desc_post">
+                                <span><%= data.description %></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            <% }) %>
+        </ul>
+        <div class="btn_page">
+            <% if (prevPage) { %>
+                <a href="/blog?page=<%= prevPage %>" class="pagination prev">&lt;página anterior</a>
+            <% } %>
+            <% if (nextPage) { %>
+                <a href="/blog?page=<%= nextPage %>" class="pagination next">próxima página &gt;</a>
+            <% } %>
+        </div>
+    </article>
+</div>
+

@@ -1,0 +1,62 @@
+<div class="udw-sidebar tablet-sidebar-tags">
+    <div class="leftmenu">
+        <aside class="aside-menuinner">
+            <h3>Atributos</h3>
+            <ul>
+                <% data.forEach(attributes => { %>
+                    <li>
+                        <a href="/post/<%= attributes.post.postTitle.replace(/ /g, '-') %>"><%= attributes.name %></a>
+                    </li>
+                <% }) %>
+            </ul>
+        </aside>
+    </div>
+</div>
+<div class="content">
+    <header class="tags-info-header">
+        <div class="nav-links-holder-tablet display-nav" role="button">
+            <div class="burger">
+                <i class='bx bx-list-plus' ></i>
+                <i class='bx bx-x icon-menu-x visibility'></i>
+            </div>
+        </div>
+        <div class="content-info">
+            <h1>Atributos do HTML</h1>
+        </div>
+    </header>
+    <div class="table-scroll-mobile">
+        <table class="table-info">
+            <thead>
+                <tr>
+                    <th>Atributos</th>
+                    <th>Elementos</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(attributes => { %>
+                    <tr>
+                        <td>
+                            <a href="/post/<%= attributes.post.postTitle.replace(/ /g, '-') %>">
+                                <span><%= attributes.name %></span>
+                            </a>
+                        </td>
+                        <td>
+                            <% attributes.tags.forEach(element => { %>
+                                <% if (element._id == '654f841fb0101004586849da') { %>
+                                    <a href="/post/ATRIBUTOS-GLOBAIS-DO-HTML:-UMA-VISÃO-ABRANGENTE">Atributos Globais</a>
+                                <% } else if (element._id == '654f884b55e7073646e4f516'){ %>
+                                    Todos os elementos visíveis
+                                <% } else { %>
+                                    <a href="/post/<%= element.post.postTitle.replace(/ /g, '-') %>"><%= element.name %></a>
+                                <% } %>
+                            <% }) %>
+                        </td>
+                        <td><%= attributes.description %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="js/sidebar-ta.js"></script>

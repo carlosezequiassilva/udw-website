@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #333;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+.header-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-dashboard a {
+    text-decoration: none;
+}
+span#dash-title {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+span.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #333;
+    font-size: 13pt;
+    padding-right: 0.5rem;
+    padding-bottom: 2px;
+    margin-right: 1rem;
+}
+
+.posts-container{
+    border-bottom: 1px solid;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 3em;
+}
+
+.category-admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.btn_page {
+    display: flex;
+    justify-content: space-between;
+}
+a.pagination.next {
+    position: relative;
+    margin-left: auto;
+}
+.category-conttroller {
+    display: flex;
+    gap: 1rem;
+}
+
+.categories-container {
+    border-bottom: 1px solid;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.add-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+span.controller-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14pt;
+}
+
+ul.category-list li {
+    padding-right: 2rem;
+}
+
+input.del-btn {
+    background-color: #333;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.add-categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cont {
+    padding: 1.5rem;
+}
+
+form.form-category {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #d1cdcd;
+}
+input[type="text"]:focus {
+    background-color: #eeecec;
+}
+
+input.btn {
+    background-color: #333;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 6px;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.error-message {
+    border: 1px solid #a56060;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    background-color: #ff6d6d;
+}
+.error-message p {
+    font-size: 14pt;
+    color: #471515;
+}

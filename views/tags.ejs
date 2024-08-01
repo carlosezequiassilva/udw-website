@@ -1,0 +1,52 @@
+<div class="udw-sidebar tablet-sidebar-tags">
+    <div class="leftmenu">
+        <aside class="aside-menuinner">
+            <h3>Elementos</h3>
+            <ul>
+                <% data.forEach(tag => { %>
+                    <li>
+                        <a href="/post/<%= tag.post.postTitle.replace(/ /g, '-') %>"><%= tag.name %></a>
+                    </li>
+                <% }) %>
+            </ul>
+        </aside>
+    </div>
+</div>
+<div class="content">
+    <header class="tags-info-header">
+        <div class="nav-links-holder-tablet display-nav" role="button">
+            <div class="burger">
+                <i class='bx bx-list-plus' ></i>
+                <i class='bx bx-x icon-menu-x visibility'></i>
+            </div>
+        </div>
+        <div class="content-info">
+            <h1>Tags do HTML</h1>
+        </div>
+    </header>
+    <div class="table-scroll-mobile">
+        <table class="table-tags">
+            <thead>
+                <tr>
+                    <th>Elementos</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(tag => { %>
+                    <tr>
+                        <td class="element">
+                            <a href="/post/<%= tag.post.postTitle.replace(/ /g, '-') %>">
+                                <span><%= tag.name %></span>
+                            </a>
+                        </td>
+                        <td>
+                            <span><%= tag.description%></span>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="js/sidebar-ta.js"></script>

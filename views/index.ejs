@@ -1,0 +1,185 @@
+<%- include('./partials/aside.ejs') %>
+<div class="container-wrap">
+    <header class="heading-hero">
+        <div class="container-header">
+            <h1 class="heading">
+                HTML
+                <span class="heading-hero-lmh">Linguagem de Marcação de HiperTextos</span>
+            </h1>
+        </div>
+    </header>
+    <section class="section-hero">
+        <h2>Introdução à Linguagem HTML: O Alicerce da Web Moderna</h2>
+        <div class="content-container-intro">
+            <div class="content-intro">
+                <div class="container-text">
+                    <p>Quando queremos acessar uma página web, estamos normalmente interessados nas informações contidas nessa página. Essas informações podem estar no formato de texto, imagens, vídeos ou arquivos de áudio. O conteúdo de uma página web é definido com a linguagem HTML(HyperText Markup Language ou Linguaguem de Marcação de Hipertextos). HTML é uma linguagem de marcação originalmente desenvolvida por Tim Berners-Lee no final dos anos de 1980.</p>
+                    <p>Desde da sua criação até os dias de hoje, HTML sofreu diversas atualizações. A cada versão, novos recursos são adicionados e problemas são corrigidos. Atualmente a versão mais nova é o HTML5.</p>
+                </div>
+                <div class="container-painel">
+                    <h3>Exemplo de um código HTML:</h3>
+                    <div class="painel-html">
+                        <span class="tagnamecolor" >&lt;!DOCTYPE html&gt;</span><br>
+                        <span class="tagnamecolor" >&lt;html&gt;</span><br>
+                        <span class="tagnamecolor" >&lt;head&gt;</span><br>
+                        <span class="tagnamecolor" >&lt;title&gt;</span>Arquivo HTML<span class="tagnamecolor" >&lt;/title&gt;</span><br>
+                        <span class="tagnamecolor" >&lt;/head&gt;</span><br>
+                        <span class="tagnamecolor" >&lt;body&gt;</span><br><br>
+                        <span class="tagnamecolor" >&lt;h1&gt;</span>Tag de Título<span class="tagnamecolor" >&lt;/h1&gt;</span><br>
+                        <span class="tagnamecolor" >&lt;p&gt;</span>Tag de Parágrafo.<span class="tagnamecolor" >&lt;/p&gt;</span><br><br>
+                        <span class="tagnamecolor" >&lt;/body&gt;</span><br>
+                        <span class="tagnamecolor" >&lt;/html&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>A World Wide Web, ou simplesmente a web, é uma parte fundamental de nossas vidas cotidianas. A capacidade de acessar informações, fazer compras, se comunicar e muito mais, tudo através de um navegador da web, transformou a maneira como interagimos com o mundo. No centro dessa revolução está a Linguagem de Marcação de Hipertexto, mais conhecida como HTML.</p>
+
+        <h3>O Que é HTML?</h3>
+        <p>Resumindo em uma frase: O HTML é uma linguagem para publicação de conteúdo(texto, imagens, vídeo, áudios e etc) na Web.</p>
+
+        <p>HTML é uma sigla que significa "Hypertext Markup Language" (Linguagem de Marcação de Hipertexto). É uma linguagem de programação, mas ao contrário de muitas outras linguagens, HTML não é usada para criar programas ou aplicativos de software. Em vez disso, ela é a linguagem usada para criar e estruturar conteúdo na web.</p>
+
+        <p>HTML funciona através de um sistema de marcação, onde os elementos são definidos por meio de tags ou etiquetas, que indicam como o conteúdo deve ser exibido ou organizado no navegador da web. Essas etiquetas são interpretadas pelo navegador para criar páginas da web que podem incluir texto, imagens, links, vídeos, formulários e muito mais.</p>
+    </section>
+    <section class="section-hero">
+        <h2>VISÃO GERAL DO HTML5</h2>
+        <p><strong>De acordo com a W3C a Web é baseada em 3 pilares:</strong></p>
+        <div class="grid-pillar">
+            <div class="pillar">
+                <h4>URL</h4>
+                    <p>Um esquema de nomes para localização de informações na Web, esse esquema chama-se URL.</p>
+            </div>
+            <div class="pillar">
+                <h4>PROTOCOLOS</h4>
+                <p>Um protocolo de acesso para acessar estas fontes, hoje o HTTP e o HTTPs.</p>
+            </div>
+            <div class="pillar">
+                <h4>HTML</h4>
+                    <p>Uma linguagem de HiperTexto, para facilitar a navegação entre fontes de informações: o HTML.</p>
+            </div>
+        </div>
+        <p>Vamos focar no terceiro pilar, o HTML.</p>
+        <p>O HTML é baseado no conceito de Hipertexto. Hipertexto são conjuntos de elementos, ligados por conexões. Estes elementos podem ser palavras, imagens, vídeos, áudios, documentos etc. Estes elementos conectados formam uma grande rede de informações. Eles não estão conectados linearmente como se fossem textos de um livro, onde um asssunto é ligado ao outro seguidamente. A conexão feita em um hipertexto é algo imprevisto que permite a comunicação de dados, organizando conhecimento e guardando informações relacionadas.</p>
+        <p>Para distribuir informações de maneira global, é necessário uma linguagem que seja entendida globalmente por diversos meios de acesso. Por isso o HTML foi desenvolvido, fazendo com que a informação publicada por meio dos códigos HTML fosse acessível por dispositivos e outros meios com características diferentes, não importando o tamanho da tela, resolução, variação de cor. Dispositivos próprios para deficientes visuais e auditivos ou dispositivos móveis e portáteis. O HTML deve ser entendido universalmente, dando a possibilidade para a reutilização de acordo com as limitações de cada meio de acesso.</p>
+        <h3>A Estrutura de um Documento HTML</h3>
+        <p>Um documento HTML é uma composição de elementos organizados em uma estrutura hierárquica. O elemento principal é o &lt;html&gt;, que contém todos os outros elementos da página. O documento HTML geralmente é estruturado da seguinte maneira:</p>
+        <div class="code-example">
+            <span>html</span>
+            <div>
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;!-- Aqui você coloca informações sobre o documento, como o título e as metatags --&gt;      
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Este é o conteúdo visível da sua página --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <ol>
+            <li>
+                <h4>&lt;!DOCTYPE html &gt;</h4>
+                <p>Para um navegador exibir corretamente uma página web, devemos informar explicitamente o tipo do documento. Tipo do documento é informado com a declaração &lt;!DOCTYPE&gt;. O DOCTYPE não é uma tag HTML, mas uma instrução especial. Ela indica para o navegador qual versão do html deve ser utilizada para renderizar a página. Utilizando &lt;!DOCTYPE html&gt;, que indica para navegador a utilização da versão mais recente do html, nesse caso, o HTML5.</p>
+            </li>
+            <li>
+                <h4>&lt;html&gt;</h4>
+                <p>Os elementos HTML, com exceção do DOCTYPE, devem ser inseridos no conteúdo das tags &lt;html&gt;...&lt;/html&gt;. Dentro das tags &lt;html&gt; e &lt;/html&gt;, é necessário declarar outras duas tags: &lt;head&gt; e &lt;body&gt;.</p>
+                <p>Diversos autores recomendam a utilização do atributo <strong>LANG</strong>. Esse atributo indica o idioma utilizado no documento HTML. Algumas ferramentas de leitura ou de tradução de texto podem utilizar esse atributo para facilitar descobrir em qual idioma os textos contidos no documento foram escrito.</p>
+                <p>Lembre-se que o atributo LANG não é restrita ao elemento &lt;html&gt;, ele pode ser utilizado em qualquer outro elemento para indicar o idioma do texto representado.</p>
+            </li>
+            <li>
+                <h4>&lt;head&gt;</h4>
+                <p>A tag &lt;head&gt; é onde fica toda a parte inteligente da página. No HEAD ficam os metadados.</p>
+                <p>Metadados são informações sobre a página e o conteúdo ali publicado.</p>
+                <p>A tag &lt;head&gt; contém informações sobre o document HTML que são de interesse somente do navegador, e não dos usuários. São informações que não serão exibidas na área do corpo do do documento.</p>
+                <p>A especificação obriga a presença das tags de conteúdo &lt;title&gt; ... &lt;/title&gt; dentro do &lt;head&gt; ... &lt;/head&gt;, permitindo especificar o título do documento, que normalmente será exibido na barra de título da janela do navegador ou na aba do documento.</p>
+                <p>Outra configuração muito importante e muito utilizada, principalmente em documentos cujo conteúdo é escrito em um idioma como o português, que possui caracteres como acento e cedilha, é a configuração da codificação de caracteres de <strong>ENCODING</strong> ou <strong>CHARSET</strong>.</p>
+                <p>Pode-se configurar qual codificação utilizar em um documento HTML por meio da configuração de charset na tag &lt;meta&gt;. Um dos valores mais utilizados hoje em dia é o UTF-8, também chamado de <strong>UNICODE</strong>. A tabela Unicode suporta algo em torno de um milhão de caracteres. Ao invés de cada região ter sua tabela de caracteres, é muito mais sensato haver uma tabela padrão com o maior número de caracteres possível.</p>
+                <p>O UTF-8 é a recomendação atual para encoding na web por ser amplamente suportada em navegadores e editores de código, além de ser compatível com praticamente todos os idiomas do mundo.</p>
+            </li>
+            <li>
+                <h4>&lt;body&gt;</h4>
+                <p>O conteúdo de uma página web deve ser definido no corpo do elemento BODY. Por exemplo, podemos inserir no body cabeçalhos, textos, listas, tabelas e muitos outros conteúdos.</p>
+            </li>
+        </ol>
+        <p>Veja mais sobre as Tags do HTML <a href="/post/INTRODUÇÃO-AS-TAGS-DO-HTML:-O-ALFABETO-DA-WEB">aqui</a>.</p>
+        
+        <h3>A Maravilha da Semântica</h3>
+        <p>Uma das características mais importantes do HTML moderno é sua capacidade de semântica. Isso significa que o HTML não apenas define como o conteúdo deve ser apresentado visualmente, mas também o que esse conteúdo significa. Por exemplo, você pode usar elementos como &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;section&gt;, entre outros, para estruturar seu conteúdo de maneira significativa, tornando-o mais acessível e compreensível para máquinas e leitores de tela.</p>
+    </section>
+    <section class="section-hero">
+        <h3>A Evolução do HTML</h3>
+        <p>Desde o seu surgimento, o HTML passou por várias versões e atualizações para se adaptar às crescentes demandas da web. As versões mais recentes, como HTML5, trouxeram avanços significativos em termos de recursos e funcionalidades. Aqui estão algumas das principais características que tornam o HTML5 tão importante:</p>
+        <ol>
+            <li><strong>Áudio e Vídeo Integrados:</strong> Com o HTML5, você pode incorporar elementos de áudio e vídeo diretamente em suas páginas sem a necessidade de plugins externos, como o Flash. Isso torna a experiência multimídia na web muito mais acessível e compatível.</li>
+            <li><strong>Canvas:</strong> A tag &lt;canvas&gt; permite a criação de gráficos e animações complexas diretamente no navegador, tornando possível o desenvolvimento de jogos e aplicativos interativos sem a necessidade de plugins adicionais.</li>
+            <li><strong>Armazenamento Local:</strong> O HTML5 introduziu recursos de armazenamento local, como o Web Storage e o IndexedDB, que permitem que os aplicativos web armazenem dados no navegador do usuário, tornando-os disponíveis offline e melhorando a eficiência.</li>
+            <li><strong>Formulários Aprimorados:</strong> Novos tipos de entrada, como datas, números e campos de pesquisa, tornaram os formulários mais poderosos e amigáveis. Além disso, a validação de formulários no lado do cliente foi aprimorada, proporcionando uma experiência mais suave para os usuários.</li>
+            <li><strong>APIs de Geolocalização e Comunicação:</strong> Com o HTML5, os desenvolvedores podem acessar a localização do usuário e criar aplicativos de comunicação em tempo real, como chats e videoconferências, diretamente no navegador.</li>
+        </ol>
+
+        <h3>A Importância da Compatibilidade</h3>
+        <p>Embora o HTML5 tenha introduzido muitos recursos emocionantes, a compatibilidade com versões anteriores ainda é uma consideração crítica. É importante garantir que seu código seja compatível com navegadores mais antigos, que podem não suportar todos os recursos do HTML5.</p>
+
+        <p>Ferramentas como <strong>polyfills</strong> e <strong>modernizrs</strong> podem ajudar a lidar com a compatibilidade, garantindo que seu conteúdo seja acessível para o maior número possível de usuários.</p>
+
+        <h3>O Futuro da Web com HTML</h3>
+        <p>À medida que a web continua a evoluir, o HTML desempenhará um papel central no desenvolvimento de aplicativos web mais sofisticados e interativos. O advento de tecnologias como WebVR, WebAssembly e Progressive Web Apps (PWAs) promete um futuro empolgante para o desenvolvimento web, e o HTML continuará a ser a base sobre a qual tudo isso é construído.</p>
+    </section>
+    <section class="section-hero">
+        <h3>Aprendizado e Recursos para HTML</h3>
+        <p>Para quem está começando a aprender HTML, existem diversos recursos disponíveis online que podem ajudar a dominar essa linguagem essencial. Aqui estão algumas dicas para sua jornada de aprendizado:</p>
+        <ol>
+            <li><strong>Documentação Oficial:</strong> O site do World Wide Web Consortium (W3C), que é o órgão que define os padrões da web, oferece uma documentação detalhada sobre HTML. Esta é uma referência confiável e completa para aprender sobre todos os elementos e atributos HTML: <a target="_blank" href="https://html.spec.whatwg.org/multipage/">W3C HTML Documentation.</a></li>
+            <li><strong>Tutoriais Online:</strong> Existem muitos tutoriais online gratuitos que explicam os conceitos básicos do HTML e o ajudarão a criar suas primeiras páginas da web. Sites como MDN Web Docs e W3Schools oferecem recursos excelentes para iniciantes: <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs - HTML</a> e <a target="_blank" href="https://www.w3schools.com/html/">W3Schools - HTML Tutorial.</a></li>
+            <li><strong>Editores de Código:</strong> Para praticar a escrita de HTML, é útil usar um editor de código. Existem muitos disponíveis gratuitamente, como Visual Studio Code, Sublime Text e Atom. Essas ferramentas oferecem destaque de sintaxe, autocompletar e outras funcionalidades que facilitam o desenvolvimento HTML.</li>
+            <li><strong>Projetos Práticos:</strong> A prática é essencial para o aprendizado de HTML. Comece criando páginas simples e, à medida que ganhar confiança, desafie-se a projetos mais complexos, como um portfólio pessoal, um blog ou uma página de comércio eletrônico fictícia.</li>
+            <li><strong>Comunidades Online:</strong> Participe de comunidades de desenvolvedores, como o Stack Overflow e fóruns de desenvolvimento web. Essas plataformas permitem fazer perguntas, obter ajuda e aprender com outros desenvolvedores.</li>
+            <li><strong>Livros e Cursos:</strong> Se você preferir uma abordagem mais estruturada, considere a possibilidade de investir em <a href="/post/AS-VANTAGENS-DE-ESTUDAR-COM-LIVROS">livros</a>, <a href="/post/AS-VANTAGENS-DE-ESTUDAR-COM-E-BOOKS">E-books</a> ou <a href="/post/AS-INÚMERAS-VANTAGENS-DOS-CURSOS">cursos</a> online dedicados ao HTML e ao desenvolvimento web.</li>
+            <li><strong>Projetos de Código Aberto:</strong> Colaborar em projetos de código aberto relacionados ao HTML é uma maneira valiosa de aplicar suas habilidades e aprender com outros desenvolvedores experientes.</li>
+        </ol>
+        <h3>O Impacto Duradouro do HTML</h3>
+        <p>À medida que você continua sua jornada de aprendizado em HTML e desenvolvimento web, é importante reconhecer que o HTML é muito mais do que apenas uma linguagem de marcação. É a espinha dorsal da web moderna, permitindo que informações, serviços e experiências sejam compartilhados globalmente. A habilidade de criar e moldar o HTML é um poderoso meio de expressão digital.</p>
+        <p>Em um mundo cada vez mais digital, os desenvolvedores HTML desempenham um papel crucial na construção de um futuro online mais inovador, acessível e diversificado. Portanto, abrace a oportunidade de aprender e dominar o HTML, e saiba que seu conhecimento é uma ferramenta valiosa para moldar o cenário digital de amanhã.</p>
+        <h3>Conclusão</h3>
+        <p>HTML é o alicerce da web moderna. Ele permite que criemos e compartilhemos informações, serviços e experiências online. À medida que você mergulha na jornada de aprender HTML, descobrirá que é uma linguagem poderosa e versátil que desempenha um papel fundamental na criação da web que todos nós conhecemos e amamos hoje. Este é apenas o começo de uma jornada emocionante em direção ao domínio da web development, e com HTML, você tem uma base sólida para construir experiências incríveis na internet.</p>
+        <p>Concluindo, a linguagem HTML é o pilar da web moderna, capacitando desenvolvedores a criar experiências online cativantes e funcionais. Dominar o HTML é o primeiro passo emocionante em direção a uma carreira em desenvolvimento web, e à medida que você mergulha nesse mundo, verá que as possibilidades são infinitas e sempre em evolução. Portanto, continue explorando e aprendendo, pois a web de amanhã dependerá das habilidades que você adquirir hoje.</p>
+    </section>
+    <section id="article">
+        <div class="article_title">
+            <h3>ARTIGOS</h3>
+        </div>
+        <article class="article_post">
+            <ul>
+                <% data.forEach(data => { %>
+                    <li class="list-blog">
+                        <a class="link__blog" href="/post/<%= data.postTitle %>">
+                            <div class="painel_post">
+                                <div class="img_post">
+                                    <img src="<%= data.image %>" alt="logo">
+                                </div>
+                                <div class="desc_post">
+                                    <span><%= data.description %></span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                <% }) %>
+            </ul>
+            <div class="btn_page">
+                <% if (prevPage) { %>
+                    <a href="/?page=<%= prevPage %>" class="pagination prev">&lt;página anterior</a>
+                <% } %>
+                <% if (nextPage) { %>
+                    <a href="/?page=<%= nextPage %>" class="pagination next">próxima página &gt;</a>
+                <% } %>
+            </div>
+        </article>
+    </section>
+</div>

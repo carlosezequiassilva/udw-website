@@ -1,0 +1,30 @@
+<div class="content__grid">
+    <%- include('./partials/aside.ejs') %>
+    <div class="container-wrap">
+        <header class="heading-hero">
+            <div class="container-header">
+                <h1 class="author__heading">Resultado da pesquisa.</h1>
+            </div>
+        </header>
+        <div class="content">
+            <article class="article_post">
+                <ul>
+                    <% data.forEach(data => { %>
+                        <li class="list-blog">
+                            <a class="link__blog" href="/post/<%= data.postTitle.replace(/ /g, '-')%>">
+                                <div class="painel_post">
+                                    <div class="img_post">
+                                        <img src="<%= data.image %>" alt="logo">
+                                    </div>
+                                    <div class="desc_post">
+                                        <span><%= data.description %></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    <% }) %>
+                </ul>
+            </article>
+        </div>
+    </div>
+</div>

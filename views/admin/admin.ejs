@@ -1,0 +1,36 @@
+<div class="wrap">
+    <div class="container">
+        <header>
+            <a href="/admin">
+                <h1>admin</h1>
+            </a>
+            <a href="/">
+            <span class="back-btn">
+                <i class='bx bx-arrow-back' ></i>
+                voltar
+            </span>
+        </a>
+        </header>
+        <div class="form-cont">
+            <% if (messages.admin) { %>
+                <div class="error-message">
+                    <p><%= messages.admin %></p>
+                </div>
+        <% } %> 
+            <form action="/admin" method="post">
+                <span class="label-admin">
+                    <i class='bx bxs-user-pin'></i>
+                    <label for="username"><b>Username</b></label>
+                </span>
+                <input type="text" placeholder="Enter Username" name="username">
+                <span class="label-admin">
+                    <i class='bx bxs-lock-alt'></i>
+                    <label for="password"><b>Password</b></label>
+                </span>
+                <input type="password" placeholder="Enter Password" name="password">
+            
+                <input type="submit" value="Login" class="btn">
+            </form>
+        </div>
+    </div>
+</div>

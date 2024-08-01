@@ -1,0 +1,90 @@
+<header class="header-dashboard">
+    <a href="/dashboard">
+        <h1>
+            <span id="dash-title"><i class='bx bxs-dashboard'></i>dashboard</span>                   
+        </h1>
+    </a>
+    <a href="/logout">
+    <span class="back-btn">
+        <i class='bx bx-log-out'></i>
+        logout
+    </span>
+</a>
+</header>
+<main>
+    <div class="categories-container">
+        <div class="categories-list">
+            <h3>
+                <span class="controller-header"><i class='bx bx-list-ul'></i>Lista de categorias:</span>
+            </h3>
+            <ul class="category-list">
+                <% dataCat.forEach(category => { %>
+                    <li>
+                        <div class="category-admin">
+                            <span class="category"><%= category.name %></span>
+                            <div class="category-conttroller">
+                                <a href="/edit-category/<%= category._id %>">Editar</a>
+                                <form action="/delete-category/<%= category._id %>?_method=DELETE" method="post">
+                                    <input class="del-btn" type="submit" value="Deletar">
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+        <div class="add-categories">
+            <% if (messages.category) { %>
+                <div class="error-message">
+                    <p><%= messages.category %></p>
+                </div>
+            <% } %>
+            <h3>
+                <span class="controller-header"><i class='bx bxs-add-to-queue'></i>Adicionar categoria:</span>
+            </h3>
+            <div class="form-cont">
+                <form class="form-category" action="/add-categories" method="post">
+                    <label for="name">Nome da categoria: </label>
+                    <input type="text" id="name" class="name" name="name" placeholder="Categoria">
+                    <input type="submit" class="btn" value="Adicionar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="posts-container">
+        <div class="post-list">
+            <h3>
+                <span class="controller-header"><i class='bx bx-list-ul'></i>Lista de post:</span>
+            </h3>
+            <ul class="post-list">
+                <% data.forEach(post => { %>
+                    <li>
+                        <div class="category-admin">
+                            <span class="category"><%= post.postTitle %></span>
+                            <div class="category-conttroller">
+                                <a href="/edit-post/<%= post.postTitle.replace(/ /g, '-') %>">Editar</a>
+                                <form action="/delete-post/<%= post._id %>?_method=DELETE" method="post">
+                                    <input class="del-btn" type="submit" value="Deletar">
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                <% }) %>
+            </ul>
+            <div class="btn_page">
+                <% if (prevPage) { %>
+                    <a href="/dashboard?page=<%= prevPage %>" class="pagination prev">&lt;página anterior</a>
+                <% } %>
+                <% if (nextPage) { %>
+                    <a href="/dashboard?page=<%= nextPage %>" class="pagination next">próxima página &gt;</a>
+                <% } %>
+            </div>
+        </div>
+        <div class="add-posts">
+            <h3>
+                <span class="controller-header"><i class='bx bxs-add-to-queue'></i>Adicionar post:</span>
+            </h3>
+            <a href="/add-post">Adicionar novo post</a>
+        </div>
+    </div>
+</main> 

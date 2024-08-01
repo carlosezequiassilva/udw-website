@@ -1,0 +1,227 @@
+main{
+    padding: 0!important;
+}
+.nav__ref a {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.opt_category {
+    font-size: 110%;
+    font-style: normal;
+    padding: 1px 10px 1px 10px;
+}
+.nav__ref a:hover{
+    text-decoration: underline;
+}
+.content_blog{
+    margin-top: 4em;
+    margin-left: 200px;
+}
+li.list-blog{
+    list-style: none;
+    width: 80%;
+}
+.link__blog{
+    text-decoration: none;
+}
+.link__blog:hover{
+    text-decoration: underline;
+    color: #4b4747;
+}
+.article_post ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-items: center;
+}
+h1.heading {
+    margin: 1em;
+}
+.painel_post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+}
+.painel_post:hover{
+    box-shadow: 4px 4px 16px rgba(13,39,80,.16);
+}
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+}
+select#category {
+    padding: 8px;
+    border-color: lightgray;
+    border-radius: 4px;
+    font-weight: 700;
+}
+button.btn {
+    padding: 8px;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.btn:hover{
+    background-color: gray;
+}
+form.search__form {
+    display: flex;
+    gap: 1em;
+}
+.desc_post {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    text-align: justify;
+    color: #18272d;
+}
+.desc_post span {
+    font-size: 14pt;
+    margin-bottom: 1em;
+}
+.desc_post small {
+    font-weight: bold;
+}
+.heading-hero {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1em;
+}
+.heading-hero small {
+    font-weight: 600;
+    font-size: 10pt;
+}
+.section-hero{
+    border-bottom: 1px solid lightgray;
+}
+.section-hero ol li {
+    margin-bottom: 1em;
+}
+.footer_wrapper {
+    margin-left: 200px;
+}
+section.venda {
+    border-top: 1px solid;
+    margin-top: 2em;
+    background-color: lightgray;
+    padding: 1em;
+}
+.code-example{
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 0.3em;
+    background-color: rgb(48 48 48);
+}
+.code-example div {
+    padding: 0.5em;
+}
+.code-example span{
+    display: block;
+    width: 100%;
+    padding: 0.2em;
+    background-color: lightgray;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    font-size: 10pt;
+    padding-left: 0.5em;
+}
+pre code{
+    color: lightgray;
+}
+.article_post {
+    margin: 1em;
+}
+@media screen and (max-width: 930px) {
+    .code-example div{
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 824px){
+    .aside-menuinner{
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 760px){
+    .udw-sidebar{
+        display: none;
+    }
+    .container-wrap{
+        margin-left: 0;
+    }
+    .content_blog {
+        margin-left: 0;
+    }
+    .footer_wrapper {
+        margin-left: 0;
+    }
+}
+.about__content {
+    padding: 0 2em;
+}
+.btn_page {
+    display: flex;
+    justify-content: space-between;
+}
+a.pagination.next {
+    position: relative;
+    margin-left: auto;
+}
+@media screen and (max-width: 575px) {
+    .article_post ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        justify-items: center;
+    }
+    article.article_post ul li {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 525px) {
+    .heading-hero {
+        margin-top: 2rem;
+    }
+    h1.heading{
+        font-size: 17pt;
+    }
+    .content_blog {
+        margin-top: 6em;
+    }
+}
+@media screen and (max-width: 480px) {
+    .filter h3 {
+        display: none;
+    }
+    .filter {
+        padding: 1em;
+    }
+    article.article_post ul li {
+        width: 90%;
+    }
+}
+.tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+.tr span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+}
+ol.order-table li {
+    padding: 4px;
+    margin-bottom: 1em;
+}

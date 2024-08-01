@@ -1,0 +1,46 @@
+<div class="content__grid">
+    <% if (data.category._id == '655e033b3fdfb87c1fd32d7b') { %>
+        <div class="udw-sidebar tablet-sidebar-tags">
+            <div class="leftmenu">
+                <aside class="aside-menuinner">
+                    <h3>Tags</h3>
+                    <ul>
+                        <% dataTags.forEach(tag => { %>
+                            <li>
+                                <a href="/post/<%= tag.post.postTitle.replace(/ /g, '-') %>"><%= tag.name %></a>
+                            </li>
+                        <% }) %>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    <% } else if (data.category._id == '655e0397955123925dbe39b8') { %>
+        <div class="udw-sidebar tablet-sidebar-tags">
+            <div class="leftmenu">
+                <aside class="aside-menuinner">
+                    <h3>Tags</h3>
+                    <ul>
+                        <% dataAtrs.forEach(atrs => { %>
+                            <li>
+                                <a href="/post/<%= atrs.post.postTitle.replace(/ /g, '-')%>"><%= atrs.name %></a>
+                            </li>
+                        <% }) %>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    <% } else { %>
+        <%- include('./partials/aside.ejs') %>
+    <% } %>
+    <div class="container-wrap">
+        <header class="heading-hero">
+            <div class="container-header">
+                <h1 class="heading">
+                    <%= data.postTitle %>
+                </h1>
+            </div>
+            <small>categoria: <%= data.category.name %></small>
+        </header>
+        <%- data.content %>
+    </div>
+</div>

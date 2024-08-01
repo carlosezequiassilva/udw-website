@@ -1,0 +1,39 @@
+<header class="header-edit-ctg">
+    <h2>
+        <span id="edit-header"><i class='bx bxs-edit-alt'></i>Adicionar novo post</span>
+    </h2>
+    <a href="/dashboard">
+        <span class="back-btn"><i class='bx bx-arrow-back' ></i> Back</span>
+    </a>
+</header>
+<div class="category-controler">
+    <form id="edit-form" action="/add-post" method="post">
+        <label for="posttitle">Título do Post: </label>
+        <input type="text" placeholder="Título do Post" name="posttitle">
+        <label for="description">Descrição: </label>
+        <textarea type="text" placeholder="Descrição" rows="10" name="description"></textarea>
+        <label for="content">Conteúdo: </label>
+        <textarea type="text" placeholder="Conteúdo" rows="10" name="content"></textarea>
+        <label for="img">File: </label>
+        <input type="text" name="img" id="file">
+        <label for="index">Tags de pesquisas: </label>
+        <select name="category" id="category">
+            <% category.forEach(category=> { %>
+                <option value="<%= category._id %>"><%= category.name %></option>
+            <% }) %>
+        </select>
+        <select name="tags" id="tags">
+            <% tags.forEach(tags=> { %>
+                <option value="<%= tags._id %>"><%= tags.name %></option>
+            <% }) %>
+        </select>
+        <select name="attributes" id="attributes">
+            <% attributes.forEach(attributes => { %>
+                <option value="<%= attributes._id %>"><%= attributes.name %></option>
+            <% }) %>
+        </select>
+        <label for="category">Index de Pesquisa: </label>
+        <textarea type="text" placeholder="Tags de pesquisas" rows="10" name="index"></textarea>
+        <input class="btn" type="submit" value="Enviar">
+    </form>
+</div>

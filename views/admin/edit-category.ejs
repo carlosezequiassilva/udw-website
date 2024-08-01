@@ -1,0 +1,18 @@
+<header class="header-edit-ctg">
+    <h2>
+        <span id="edit-header"><i class='bx bxs-edit-alt'></i><%= data.name %></span>
+    </h2>
+    <a href="/dashboard">
+        <span class="back-btn"><i class='bx bx-arrow-back' ></i> Back</span>
+    </a>
+</header>
+<div class="category-controler">
+    <form id="edit-form" action="/edit-category/<%= data._id %>?_method=PUT" method="post">
+        <label for="name">Nome da categoria: </label>
+        <input type="text" placeholder="Categoria" name="name" value="<%= data.name %>">
+        <input class="btn" type="submit" value="Update">
+    </form>
+    <form id="del-form" action="/delete-category/<%= data._id %>?_method=DELETE" method="post">
+        <input class="btn" type="submit" value="Delete">
+    </form>
+</div>

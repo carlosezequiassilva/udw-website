@@ -1,0 +1,20 @@
+.container_404 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error_msg {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 1em;
+}
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    color: #333131;
+}
